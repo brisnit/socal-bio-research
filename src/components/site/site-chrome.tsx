@@ -43,7 +43,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-2.5 group text-foreground" aria-label="Socal Bioresearch: home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.png"
+            src="/Logo2.png"
             alt=""
             className="h-9 w-9 object-contain transition-transform group-hover:rotate-[-4deg]"
           />
@@ -107,7 +107,7 @@ export function SiteFooter({ blurb, disclaimer }: { blurb: string; disclaimer: s
           <div className="md:col-span-5">
             <div className="flex items-center gap-2.5 text-foreground">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="Socal Bioresearch" className="h-9 w-9 object-contain" />
+              <img src="/Logo2.png" alt="Socal Bioresearch" className="h-9 w-9 object-contain" />
             </div>
             <p className="mt-6 max-w-md text-sm text-muted-foreground leading-relaxed">{blurb}</p>
           </div>

@@ -10,7 +10,7 @@ export default async function LoginPage() {
       <div className="w-full max-w-sm rounded-lg border border-border bg-background p-8 shadow-sm">
         <div className="mb-6 flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="" className="h-8 w-8 object-contain" />
+          <img src="/Logo2.png" alt="" className="h-8 w-8 object-contain" />
           <h1 className="font-display text-lg font-semibold">Socal Bioresearch admin</h1>
         </div>
         {!isSupabaseConfigured() && (

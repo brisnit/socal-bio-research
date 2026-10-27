@@ -27,7 +27,7 @@ export default async function PanelLayout({ children }: { children: ReactNode })
         <div className="px-5 py-5">
           <Link href="/admin" className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="" className="h-7 w-7 object-contain" />
+            <img src="/Logo2.png" alt="" className="h-7 w-7 object-contain" />
             <span className="font-display text-sm font-semibold">Socal Admin</span>
           </Link>
         </div>

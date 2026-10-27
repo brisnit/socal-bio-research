@@ -36,6 +36,10 @@ All publicly served assets observed while crawling every route. "Preserved" mean
 | `/products/sermorelin.webp` | webp | 12,328 | 100×133 | /products, /products/sermorelin | Preserved |
 | `/products/tirzepatide.webp` | webp | 250,058 | 500×663 | /products, /products/tirzepatide | Preserved |
 
+## Logo update (client-supplied)
+
+`/Logo2.png` (1261×1247, transparent background, supplied by the client) replaces `/logo.png` as the site logo in the header, the footer and the admin. `/logo.png` is still in `public/` but nothing references it. The favicons are unchanged.
+
 ## Fonts
 
 | Family | Weights | Source | Role |
