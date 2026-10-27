@@ -37,7 +37,7 @@ export const specsSchema = z.object({
 
 export const productSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(200),
-  slug: z.string().trim().regex(SLUG_RE, "Slug must be lowercase letters, numbers and single hyphens"),
+  slug: z.string().trim().regex(SLUG_RE, "Slug must be lowercase letters, numbers and single hyphens").refine((s) => s !== "new", "\"new\" is reserved; choose another slug"),
   category: z.enum(CATEGORIES),
   tagline: z.string(),
   summary: z.string(),

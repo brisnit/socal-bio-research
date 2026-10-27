@@ -19,16 +19,20 @@ export function pageMeta({
   path: string;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
+  // Next.js strips the trailing slash from a bare-origin URL, but the original
+  // site's canonical/og:url for "/" keep it, so the home page renders those
+  // two tags itself (see <RootUrlTags />).
+  const isRoot = path === "/";
   const image = ogImage ? `${SITE_URL}/og/${ogImage}` : undefined;
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: url },
+    ...(isRoot ? {} : { alternates: { canonical: url } }),
     openGraph: {
       type: "website",
       title: ogTitle ?? title,
       description: ogDescription ?? description,
-      url,
+      ...(isRoot ? {} : { url }),
       ...(image ? { images: [{ url: image, width: 1200, height: 630 }] } : {}),
     },
     twitter: {
@@ -39,4 +43,5 @@ export function pageMeta({
     },
   };
 }
+
 

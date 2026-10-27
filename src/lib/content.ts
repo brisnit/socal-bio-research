@@ -45,8 +45,18 @@ const loadProductRows = cache(async (): Promise<ProductRow[] | null> => {
     console.error("[content] products query failed; using seed", error.message);
     return null;
   }
-  return data && data.length ? (data as ProductRow[]) : null;
+  if (data && data.length) return data as ProductRow[];
+  // No published rows: use the seed only if the table was never populated,
+  // so unpublishing everything in /admin really empties the catalog.
+  return (await tableHasRows("products")) ? [] : null;
 });
+
+async function tableHasRows(table: "products" | "faqs"): Promise<boolean> {
+  const db = getAdminClient();
+  if (!db) return false;
+  const { count, error } = await db.from(table).select("id", { count: "exact", head: true });
+  return !error && (count ?? 0) > 0;
+}
 
 function rowToProduct(r: ProductRow): Product {
   return {
@@ -100,7 +110,8 @@ export const getFaqs = cache(async (): Promise<Faq[]> => {
     .select("question,answer")
     .eq("is_published", true)
     .order("sort_order", { ascending: true });
-  if (error || !data?.length) return FAQS;
+  if (error) return FAQS;
+  if (!data?.length) return (await tableHasRows("faqs")) ? [] : FAQS;
   return data.map((r) => ({ q: r.question as string, a: r.answer as string }));
 });
 

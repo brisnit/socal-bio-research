@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test:visual": "node tests/visual/compare.mjs",
-    "test:links": "node tests/links.mjs"
+    "test:functional": "node tests/functional.mjs",
+    "test:links": "node tests/links.mjs",
+    "test:seo": "node tests/seo.mjs",
+    "test:a11y": "node tests/a11y.mjs",
+    "test:db": "node tests/db-policies.mjs",
+    "test:visual": "node tests/visual/compare.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",
@@ -25,6 +28,8 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@electric-sql/pglite": "^0.3.15",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",

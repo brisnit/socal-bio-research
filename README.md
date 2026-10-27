@@ -47,6 +47,10 @@ Full backend setup is in [`docs/deployment.md`](docs/deployment.md).
 | `npm run typecheck` | TypeScript check |
 | `node tests/functional.mjs [url]` | End-to-end checks of interactive behavior: age gate, menu, search, forms, chat, 404, admin protection |
 | `node tests/links.mjs [url]` | Crawls every page and checks internal links, images and console errors |
+| `node tests/seo.mjs [origUrl] [newUrl]` | Compares SEO metadata with the live site, route by route |
+| `node tests/a11y.mjs [origUrl] [newUrl]` | axe accessibility scan of both sites, compared |
+| `node tests/db-policies.mjs` | Applies the migrations to an in-memory Postgres and tests the RLS policies |
+| `node tests/visual/states.mjs <origUrl> <newUrl> <dir>` | Pixel-diffs interactive states: age gate, chat, mobile menu, form errors |
 | `node tests/visual/shoot.mjs <url> <dir>` | Full-page screenshots of all 35 routes at 1440/1024/768/390/375 px |
 | `node tests/visual/compare.mjs <origDir> <newDir> <outDir>` | Pixel diff plus an HTML report |
 | `node --env-file=.env.local scripts/create-owner.mjs <email> <password>` | Creates the first admin owner |

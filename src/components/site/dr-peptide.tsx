@@ -295,6 +295,7 @@ export function DrPeptideWidget() {
         role="dialog"
         aria-label="Dr. Peptide chat"
         aria-hidden={!open}
+        inert={!open}
       >
         <div className="flex h-[min(640px,calc(100vh-3rem))] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl">
           <div

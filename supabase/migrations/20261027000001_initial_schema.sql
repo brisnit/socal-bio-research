@@ -11,7 +11,7 @@
 --     public.admin_users. RLS policies use public.admin_role() so a signed-in
 --     non-admin gets nothing.
 
-create extension if not exists "pgcrypto";
+-- gen_random_uuid() is built into Postgres 13+ (no pgcrypto needed).
 
 -- ---------------------------------------------------------------------------
 -- Admin users and roles

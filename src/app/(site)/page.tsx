@@ -1,6 +1,7 @@
 import { preload } from "react-dom";
 import { getProducts } from "@/lib/content";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, SITE_URL } from "@/lib/seo";
+import { RootUrlTags } from "@/components/site/json-ld";
 import { HomeHero } from "@/components/home/hero";
 import { ProductMarquee } from "@/components/home/marquee";
 import { VideoSection } from "@/components/home/video-section";
@@ -24,6 +25,7 @@ export default async function Home() {
   const performance = products.filter((p) => p.category === "performance-recovery").slice(0, 4);
   return (
     <>
+      <RootUrlTags url={`${SITE_URL}/`} />
       <HomeHero />
       <ProductMarquee names={products.map((p) => p.name)} />
       <VideoSection

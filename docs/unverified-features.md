@@ -14,6 +14,16 @@ Reconnaissance covered only what the live site serves publicly: the HTML, JavaSc
 | 8 | **Cloudflare edge behavior** | `server: cloudflare` headers and the `__cf_bm` bot cookie | Firewall, bot or caching rules | Vercel defaults plus security headers. Use Vercel Firewall or Cloudflare in front if needed. |
 | 9 | **Google Search Console verification** | The meta tag value | That the tag belongs to the client | Kept verbatim. The client should re-verify and replace it. |
 
+## Verified only partially in this environment
+
+- **Admin dashboard against a live Supabase project.** No Supabase project or Docker was available, so these are the checks that ran:
+  - The migrations and RLS policies were tested in an in-memory Postgres (`tests/db-policies.mjs`, 12/12 pass).
+  - Every admin route compiles and type-checks.
+  - Signed-out users are redirected to login.
+
+  The sign-in, CRUD, upload and invite flows have not yet been clicked through against a real project. That is the first task after creating the client's Supabase project (`deployment.md` §3).
+- **Dr. Peptide with real model output.** No API key was available. The streaming bridge was verified end to end against a mock Anthropic endpoint. The quality of real answers and refusals should be reviewed with the client's key before launch.
+
 ## Small behavior differences, intentional and invisible to visitors
 
 - **Forms post to the new server API instead of writing to Supabase from the browser.** Validation, messages and states are unchanged. The server repeats the honeypot, minimum-time and rate-limit checks. This is a security improvement.
