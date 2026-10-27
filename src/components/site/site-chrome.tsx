@@ -99,7 +99,7 @@ export function SiteHeader() {
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ blurb, disclaimer }: { blurb: string; disclaimer: string }) {
   return (
     <footer className="mt-32 border-t border-border bg-background text-foreground">
       <div className="mx-auto max-w-7xl px-4 md:px-6 py-20">
@@ -109,10 +109,7 @@ export function SiteFooter() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo.png" alt="Socal Bioresearch" className="h-9 w-9 object-contain" />
             </div>
-            <p className="mt-6 max-w-md text-sm text-muted-foreground leading-relaxed">
-              Socal Bioresearch helps people understand peptides in plain English: what they are, how they work, and
-              what questions to ask next.
-            </p>
+            <p className="mt-6 max-w-md text-sm text-muted-foreground leading-relaxed">{blurb}</p>
           </div>
           <div className="md:col-span-3 md:col-start-7">
             <h4 className="eyebrow-mono mb-5">Explore</h4>
@@ -170,10 +167,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-20 pt-8 border-t border-border text-xs text-muted-foreground leading-relaxed">
           <p className="font-mono uppercase tracking-[0.22em] text-foreground mb-3">Plain language peptide support</p>
-          <p className="max-w-3xl">
-            Information on this site is educational and should not replace guidance from a qualified professional. If
-            you have a specific question, contact our team and a real person will respond.
-          </p>
+          <p className="max-w-3xl">{disclaimer}</p>
           <p className="mt-8">© {new Date().getFullYear()} Socal Bioresearch.</p>
         </div>
       </div>

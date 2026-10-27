@@ -8,3 +8,4 @@ next-env.d.ts
 .vercel
 tests/visual/output
 test-results
+tests/visual/*.log
