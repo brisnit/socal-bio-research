@@ -8,7 +8,7 @@ These changes were made on purpose, at the client's request, after the faithful 
 | 2026-10-27 | **Contact page:** the personal name and email were removed from the "Direct" block, which now shows only an **"Email us"** link to the company inbox. The address is assembled in the browser after load, so it never appears in the HTML that bots scrape. Without JavaScript, the link points to `/contact`. | `src/app/(site)/contact/page.tsx` |
 | 2026-10-27 | **Contact page CTA:** the "Email us" link is now a **"Copy email"** button in the site's dark button style. Clicking it copies the address to the clipboard and shows "Copied" for 2 seconds. If the clipboard is unavailable, it opens the visitor's mail app instead. The address still never appears on the page or in its HTML. | `src/components/site/copy-email-button.tsx`, `src/app/(site)/contact/page.tsx` |
 | 2026-10-27 | **Catalog:** Retatrutide was removed. Its product page, sitemap entry, product image and COA image are deleted. `/products/retatrutide` now permanently redirects (308) to `/products`. | `src/content/products.ts`, `public/sitemap.xml`, `next.config.ts` |
-| 2026-10-27 | **Home page "Peptides we cover" stat** now reads 22, up from 23, so it matches the catalog. | `src/components/home/stats.tsx` |
+| 2026-10-27 | **Home page "Peptides we cover" stat** now reads 22, down from 23, so it matches the catalog. | `src/components/home/stats.tsx` |
 
 ## Notes for the database
 
