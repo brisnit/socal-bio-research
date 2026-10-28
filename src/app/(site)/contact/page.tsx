@@ -1,4 +1,4 @@
-import { EmailUsLink } from "@/components/site/email-us-link";
+import { CopyEmailButton } from "@/components/site/copy-email-button";
 import { Suspense } from "react";
 import { PageHero } from "@/components/site/page-hero";
 import { Reveal } from "@/components/site/reveal";
@@ -36,7 +36,7 @@ export default function Page() {
             <aside className="space-y-12">
               <div>
                 <p className="eyebrow-mono">Direct</p>
-                <EmailUsLink className="mt-2 block text-base text-foreground hover:text-primary transition-colors" />
+                <CopyEmailButton className="mt-4" />
               </div>
               <div>
                 <p className="eyebrow-mono">Response window</p>
