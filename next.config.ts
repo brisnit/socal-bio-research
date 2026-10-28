@@ -9,6 +9,12 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  async redirects() {
+    return [
+      // Retatrutide was removed from the catalog (client request, 2026-10-27).
+      { source: "/products/retatrutide", destination: "/products", permanent: true },
+    ];
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

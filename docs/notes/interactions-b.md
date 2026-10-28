@@ -64,7 +64,7 @@ Only the first issue per field is shown.
 - success: `role=status`, accent left border, check-circle icon, "Thanks: your message is in. A real person will reply within one business day." The form stays visible (it is not replaced).
 
 ### Page copy
-PageHero eyebrow "05: Contact", meta "Real humans · Real answers", title "Talk to" / muted "a **real** person." (OrangeWord on "real"), description "No script. No pressure. Tell us what you're curious about and we'll get back: usually within one business day." Aside: "Direct" -> "Veronica Hollis", mailto `vchollis05@gmail.com`; "Response window" -> "Within one business day."; "No commitment" -> "You don't need a lab, a credential, or a reason. If you're curious, ask." Form column is wrapped in Reveal with delay 150. The card has a 1px accent bar on its left edge.
+PageHero eyebrow "05: Contact", meta "Real humans · Real answers", title "Talk to" / muted "a **real** person." (OrangeWord on "real"), description "No script. No pressure. Tell us what you're curious about and we'll get back: usually within one business day." Aside: "Direct" -> "[name removed]", mailto `[email removed]`; "Response window" -> "Within one business day."; "No commitment" -> "You don't need a lab, a credential, or a reason. If you're curious, ask." Form column is wrapped in Reveal with delay 150. The card has a 1px accent bar on its left edge.
 
 ---
 

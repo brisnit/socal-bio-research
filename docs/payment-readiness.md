@@ -12,8 +12,8 @@ This document lays out what the client needs to decide, and what the codebase al
 
 This is based on the public site:
 
-- **Catalog:** 23 peptides in two groups.
-  - "Wellness & Longevity" (14): GLP 1, MOTS C, Semaglutide, Tirzepatide, Retatrutide, Cagrilintide, NAD+, Glutathione, Epitalon, Thymosin Alpha 1, Selank, Semax, PT 141, Melanotan II
+- **Catalog:** 22 peptides in two groups. Retatrutide was removed at the client's request.
+  - "Wellness & Longevity" (13): GLP 1, MOTS C, Semaglutide, Tirzepatide, Cagrilintide, NAD+, Glutathione, Epitalon, Thymosin Alpha 1, Selank, Semax, PT 141, Melanotan II
   - "Performance & Recovery" (9): BPC 157, TB 500, BPC 157 / TB 500 Blend, CJC 1295, Ipamorelin, Sermorelin, Tesamorelin, GHK Cu, AOD 9604
 - **How it is sold today:** there is no online purchase.
   1. A visitor uses "Ask about X", which opens `/contact?type=catalog`, or "I'd like to order", which uses the procurement inquiry type.

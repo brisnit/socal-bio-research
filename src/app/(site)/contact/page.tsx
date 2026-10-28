@@ -1,3 +1,4 @@
+import { EmailUsLink } from "@/components/site/email-us-link";
 import { Suspense } from "react";
 import { PageHero } from "@/components/site/page-hero";
 import { Reveal } from "@/components/site/reveal";
@@ -35,13 +36,7 @@ export default function Page() {
             <aside className="space-y-12">
               <div>
                 <p className="eyebrow-mono">Direct</p>
-                <p className="mt-2 text-base text-foreground">Veronica Hollis</p>
-                <a
-                  href="mailto:vchollis05@gmail.com"
-                  className="mt-1 block text-base text-foreground break-all hover:text-primary transition-colors"
-                >
-                  vchollis05@gmail.com
-                </a>
+                <EmailUsLink className="mt-2 block text-base text-foreground hover:text-primary transition-colors" />
               </div>
               <div>
                 <p className="eyebrow-mono">Response window</p>

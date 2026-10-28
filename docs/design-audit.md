@@ -114,7 +114,7 @@ Covers all sampled pages, largest text first.
 | Inter Tight | 16px | 400 | 24px | -0.32px | none | `lab(3.66811 -0.860922 -5.02954)` | 1 | `h2` "Peptide catalog" |
 | JetBrains Mono | 16px | 400 | 26px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 1 | `code` "YAibEGTFTSDYSIYLDKIAQK(γE-C20 diacid)AFV" |
 | Inter | 16px | 500 | 22px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 2 | `span` "Tirzepatide Once Weekly for research of " |
-| Inter | 16px | 400 | 24px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 7 | `p` "Veronica Hollis" |
+| Inter | 16px | 400 | 24px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 7 | `p` "[name removed]" |
 | Inter Tight | 15px | 600 | 22.5px | -0.3px | none | `lab(3.66811 -0.860922 -5.02954)` | 9 | `span` "Socal Bioresearch" |
 | Inter Tight | 15px | 600 | 22.5px | -0.3px | none | `lab(28.0607 -1.50979 -5.29136)` | 9 | `span` "Bioresearch" |
 | Inter | 15px | 500 | 22.5px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 13 | `span` "Talk to a real person" |
@@ -192,7 +192,7 @@ Covers all sampled pages, largest text first.
 | Inter | 16px | 400 | 26px | normal | none | `oklab(0.999994 0.0000455678 0.0000200868 / 0.9)` | 1 | `p` "No pressure, no sales script. Tell us wh" |
 | Inter Tight | 16px | 600 | 24px | -0.4px | none | `rgb(255, 255, 255)` | 2 | `p` "Not sure where to start? Ask Dr. Peptide" |
 | Inter Tight | 16px | 400 | 24px | -0.32px | none | `lab(3.66811 -0.860922 -5.02954)` | 1 | `h2` "Peptide catalog" |
-| Inter | 16px | 400 | 24px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 7 | `p` "Veronica Hollis" |
+| Inter | 16px | 400 | 24px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 7 | `p` "[name removed]" |
 | Inter Tight | 15px | 600 | 22.5px | -0.3px | none | `lab(3.66811 -0.860922 -5.02954)` | 9 | `span` "Socal Bioresearch" |
 | Inter Tight | 15px | 600 | 22.5px | -0.3px | none | `lab(28.0607 -1.50979 -5.29136)` | 9 | `span` "Bioresearch" |
 | Inter | 15px | 500 | 22.5px | normal | none | `lab(3.66811 -0.860922 -5.02954)` | 13 | `span` "Talk to a real person" |

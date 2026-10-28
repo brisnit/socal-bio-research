@@ -29,7 +29,7 @@ function useCountUp(target: number, duration = 1600, start = false) {
 
 const STATS = [
   { value: 99, suffix: "%+", label: "Purity, every peptide" },
-  { value: 23, suffix: "", label: "Peptides we cover" },
+  { value: 22, suffix: "", label: "Peptides we cover" },
   { value: 1, suffix: "", label: "Real human, every call" },
   { value: 24, suffix: "h", label: "Reply window" },
 ];

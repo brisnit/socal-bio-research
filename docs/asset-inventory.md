@@ -10,7 +10,7 @@ All publicly served assets observed while crawling every route. "Preserved" mean
 | `/coa/bpc-157-tb-500-blend.webp` | webp | 28,012 | 500×647 | /products/bpc-157-tb-500-blend | Preserved |
 | `/coa/glutathione.webp` | webp | 28,524 | 500×647 | /products/glutathione | Preserved |
 | `/coa/ipamorelin.webp` | webp | 28,052 | 500×647 | /products/ipamorelin | Preserved |
-| `/coa/retatrutide.webp` | webp | 28,832 | 500×647 | /products/retatrutide | Preserved |
+| `/coa/retatrutide.webp` | webp | 28,832 | 500×647 | /products/retatrutide | Removed (client request) |
 | `/coa/tirzepatide-20mg.webp` | webp | 62,390 | 791×1024 | /products/tirzepatide | Preserved |
 | `/coa/tirzepatide-30mg.webp` | webp | 52,906 | 750×971 | /products/tirzepatide | Preserved |
 | `/favicon-16.png` | png | 407 | 16×16 | Browser icon | Preserved |
@@ -31,7 +31,7 @@ All publicly served assets observed while crawling every route. "Preserved" mean
 | `/products/generic-vial.webp` | webp | 887,548 | 1024×1024 | /products | Preserved |
 | `/products/glutathione.webp` | webp | 259,502 | 500×669 | /products, /products/glutathione | Preserved |
 | `/products/ipamorelin.webp` | webp | 263,152 | 500×673 | /products, /products/ipamorelin | Preserved |
-| `/products/retatrutide.webp` | webp | 265,592 | 500×701 | /products, /products/retatrutide | Preserved |
+| `/products/retatrutide.webp` | webp | 265,592 | 500×701 | /products, /products/retatrutide | Removed (client request) |
 | `/products/semax.webp` | webp | 9,468 | 100×133 | /products, /products/semax | Preserved |
 | `/products/sermorelin.webp` | webp | 12,328 | 100×133 | /products, /products/sermorelin | Preserved |
 | `/products/tirzepatide.webp` | webp | 250,058 | 500×663 | /products, /products/tirzepatide | Preserved |

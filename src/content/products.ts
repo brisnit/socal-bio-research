@@ -230,33 +230,6 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    "slug": "retatrutide",
-    "name": "Retatrutide",
-    "category": "wellness-longevity",
-    "tagline": "Triple incretin receptor candidate",
-    "summary": "An emerging tri agonist targeting GLP 1, GIP, and glucagon receptors in metabolic pathway discussions.",
-    "mechanism": "Discussed for concurrent activation of three metabolic receptor families .",
-    "researchAreas": [
-      "Tri agonist activity",
-      "Energy expenditure models"
-    ],
-    "purity": "≥98% by HPLC",
-    "references": [
-      {
-        "title": "Triple Hormone Receptor Agonist Retatrutide for Obesity (Phase 2)",
-        "source": "NEJM",
-        "year": 2023,
-        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972"
-      },
-      {
-        "title": "Retatrutide for Type 2 Diabetes (Phase 2)",
-        "source": "The Lancet",
-        "year": 2023,
-        "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)01053-X/fulltext"
-      }
-    ]
-  },
-  {
     "slug": "cagrilintide",
     "name": "Cagrilintide",
     "category": "wellness-longevity",
@@ -724,19 +697,6 @@ export const PRODUCT_SPECS: Record<string, ProductSpecs> = {
         "label": "Tirzepatide 30 mg",
         "purity": "99.817%",
         "image": "/coa/tirzepatide-30mg.webp"
-      }
-    ]
-  },
-  "retatrutide": {
-    "cas": "2381089 83 2",
-    "molecularWeight": "4731.4 Da",
-    "sequence": "Tri agonist (GLP 1 / GIP / glucagon)",
-    "productImage": "/products/retatrutide.webp",
-    "coas": [
-      {
-        "label": "Retatrutide 10 mg",
-        "purity": "99.941%",
-        "image": "/coa/retatrutide.webp"
       }
     ]
   },
